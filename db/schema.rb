@@ -17,13 +17,13 @@ ActiveRecord::Schema.define(version: 20151119225409) do
   enable_extension "plpgsql"
 
   create_table "drinks", force: :cascade do |t|
-    t.integer  "emotion_id_id"
+    t.integer  "emotion_id"
     t.string   "name"
     t.string   "image"
-    t.text     "ingredients",   default: [],              array: true
+    t.text     "ingredients",  default: [],              array: true
     t.text     "instructions"
-    t.datetime "created_at",                 null: false
-    t.datetime "updated_at",                 null: false
+    t.datetime "created_at",                null: false
+    t.datetime "updated_at",                null: false
   end
 
   create_table "emotions", force: :cascade do |t|

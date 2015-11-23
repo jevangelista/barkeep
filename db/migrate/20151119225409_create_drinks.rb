@@ -1,7 +1,7 @@
 class CreateDrinks < ActiveRecord::Migration
   def change
     create_table :drinks do |t|
-      t.references :emotion_id
+      t.references :emotion
       t.string :name
       t.string :image
       t.text :ingredients, array: true, default: [] 
