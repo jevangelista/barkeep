@@ -1,7 +1,7 @@
 class CreateEmotions < ActiveRecord::Migration
   def change
     create_table :emotions do |t|
-      t.string :type
+      t.string :feeling
 
       t.timestamps null: false
     end

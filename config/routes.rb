@@ -9,4 +9,7 @@ Rails.application.routes.draw do
   get "/sessions/new", to: "sessions#new", as: "sign_in"
   get "/sessions/logout", to: "sessions#destroy", as: "logout"
   post "/sessions", to: "sessions#create"
+
+  get "/emotions", to: "emotions#index"
+
 end
