@@ -4,7 +4,8 @@
 	<h2> All the emotions </h2>
 	<% @emotions.each do |emotion| %>
 		<div>
-			<%= emotion.name %>
+				
+			<%= link_to emotion.name, "/emotions/#{emotion.id}" %>
 		</div>
 	<% end %>
 </div>

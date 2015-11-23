@@ -16,6 +16,8 @@
 	 	<!-- @user.present? -->
 	    <% if current_user %>
 	      
+	      <li><%= button_to "Bar", emotions_path, method: "get", class: "btn btn-default" %></li>
+	       <li><%= button_to "Profile", current_user, method: "get", class: "btn btn-default" %></li>
 	       <li><%= button_to "Logout", logout_path, method: "get", class: "btn btn-default" %></li>
 	     
 	    <% else %>

@@ -11,5 +11,6 @@ Rails.application.routes.draw do
   post "/sessions", to: "sessions#create"
 
   get "/emotions", to: "emotions#index"
+  get "/emotions/:id", to: "emotions#show"
 
 end

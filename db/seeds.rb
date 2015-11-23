@@ -72,23 +72,6 @@ drinks_sleepy = Emotion.find_by_name("Sleepy").drinks.create([
 	}
 	])
 
-drinks_sleepy = Emotion.find_by_name("Sleepy").drinks.create([
-	{
-		name: 'White Russian',
-		ingredients: ["2 oz Vodka", "1 oz Kahlua", "1 oz Heavy cream"],
- 		instructions: "Add the vodka and Kahlúa to an Old Fashioned glass filled with ice. Top with a large splash of heavy cream and stir."
-	},
-	{
-		name: 'Hot Toddy',
-		ingredients: ["Boiling water", "4 Cloves", "1 Lemon Twist", "2 tsp Brown sugar", ".25 oz Lemon juice", "2 oz Bourbon, rye whiskey, Irish whiskey, or Scotch"],
- 		instructions: "Fill a mug with boiling water and let stand for a minute or two to warm. Meanwhile, stick the cloves into the lemon twist and set aside. Empty the mug and fill about halfway with fresh boiling water. Add the sugar and stir to dissolve. Add the prepared lemon twist and stir. Add the lemon juice and whiskey, and stir again."
-	},
-	{
-		name: 'Eggnog',
-		ingredients: ["6 Eggs separated", ".75 cop Sugar, divided", "32 oz Whole milk", "16 oz Heavy cream", "8 oz Bourbon", "4 oz Spiced rum"],
- 		instructions: "In a large bowl, beat together the egg yolks and half a cup of sugar until they turn light in color. Stir in the milk, heavy cream, bourbon and rum. In a separate bowl, beat the egg whites with the remaining quarter-cup of sugar until they form soft peaks. Fold about a third of the egg whites into the yolk mixture. Serve in punch or tea cups topped with freshly grated nutmeg, folding in more of the egg whites as desired."
-	}
-	])
 
 drinks_fancy = Emotion.find_by_name("Fancy").drinks.create([
 	{
