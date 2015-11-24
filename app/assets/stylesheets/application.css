@@ -16,7 +16,7 @@
  */
 
 body {
-	padding-top:38px;
+	padding-top:40px;
 	background-color: #655341;
 }
 
@@ -51,7 +51,7 @@ body {
     color: #ffffff
 }
 
-.btn-button-name.btn-lg {
+.btn-button-name.btn-default {
     border: 3px solid white;
 }
 .btn-button-name.btn-sm {
