@@ -2,6 +2,7 @@ class EmotionsController < ApplicationController
 
 	def index
 		@emotions = Emotion.all
+		@randemotion = @emotions.order("RANDOM()").first
 	end
 
 	def show

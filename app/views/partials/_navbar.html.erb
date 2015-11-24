@@ -1,4 +1,4 @@
-<div class="navbar navbar-fixed-top navbar-inverse">
+<div class="navbar navbar-fixed-top navbar-default">
   <div class="container">
 	 <div class="navbar-header">
      	 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
@@ -16,14 +16,14 @@
 	 	<!-- @user.present? -->
 	    <% if current_user %>
 	      
-	      <li><%= button_to "Bar", emotions_path, method: "get", class: "btn btn-default" %></li>
-	       <li><%= button_to "Profile", current_user, method: "get", class: "btn btn-default" %></li>
-	       <li><%= button_to "Logout", logout_path, method: "get", class: "btn btn-default" %></li>
+	      <li><%= button_to "Bar", emotions_path, method: "get", class: "btn btn-button-name btn-sm" %></li>
+	       <li><%= button_to "Profile", current_user, method: "get", class: "btn btn-button-name btn-sm" %></li>
+	       <li><%= button_to "Logout", logout_path, method: "get", class: "btn btn-button-name btn-sm" %></li>
 	     
 	    <% else %>
 		  	
-		  	<li><%= button_to "Sign Up", new_user_path, method: "get", class: "btn btn-default" %></li>
-	         <li><%= button_to "Login", sign_in_path, method: "get", class: "btn btn-default" %></li>
+		  	<li><%= button_to "Sign Up", new_user_path, method: "get", class: "btn btn-button-name btn-sm" %></li>
+	         <li><%= button_to "Login", sign_in_path, method: "get", class: "btn btn-button-name btn-sm" %></li>
 		     
 		  <% end %>
 

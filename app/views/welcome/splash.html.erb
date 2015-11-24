@@ -1,2 +1,15 @@
-<h1>Welcome to Bartend.Me!</h1>
+
+	
+	<h1 class="splash-font-h1">
+		Bartend.Me
+	</h1>
+		<div class="splash-center">
+			<h4>Say hello to your new personal bartender! </h4>
+			    <%= link_to "Sign Up", new_user_path, method: "get",  class: "btn btn-button-name btn-lg"  %>
+		          <%= link_to "Login", sign_in_path, method: "get", class: "btn btn-button-name btn-lg" %>
+		</div>
+
+			<img src="/images/all-drinks.png" class="splash-page">
+	
+<script> $("h1").lettering(); </script>
 

@@ -13,4 +13,5 @@ Rails.application.routes.draw do
   get "/emotions", to: "emotions#index"
   get "/emotions/:id", to: "emotions#show"
 
+
 end
