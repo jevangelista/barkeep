@@ -24,7 +24,21 @@
 	
 				<table>
 					<tr>
-					<% @emotions.each do |emotion| %>
+					<% @emotions[0..3].each do |emotion| %>
+							<td>
+							<div class="emotion-buttons">	
+							<%= link_to emotion.name, "/emotions/#{emotion.id}", class: "myButton" %>
+							</div>
+							</td>
+
+					
+					<% end %>
+					</tr>
+				</table>
+
+				<table>
+					<tr>
+					<% @emotions[4..7].each do |emotion| %>
 							<td>
 							<div class="emotion-buttons">	
 							<%= link_to emotion.name, "/emotions/#{emotion.id}", class: "myButton" %>
