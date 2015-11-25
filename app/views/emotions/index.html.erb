@@ -1,12 +1,41 @@
 <div class="container-fluid">
-	<h1> Welcome to the Bar </h1>
+	<h1 class="splash-font-h1"> Welcome to the Bar! </h1>
 
-	<h2> All the emotions </h2>
-	<% @emotions.each do |emotion| %>
-		<div>
-				
-			<%= link_to emotion.name, "/emotions/#{emotion.id}" %>
-		</div>
-	<% end %>
+	<div class="row">
+					<div class="col-xs-12 col-sm-6 col-md-8">
+						<img class="bartender-img" src="/images/bartender.png">
+					</div>
+
+					<div class="container col-xs-6 col-md-4">
+						<p class="bubble bubble-font">
+							Hello, my name is Tobi! 
+							I will be your personal bartender for today. 
+							Select one of the options below, and I'll serve just the drink for you!
+						</p>
+					</div>
+
+
+	</div>
 
 </div>
+
+	<div class="emotion-section">
+		<h2 class="bar-font"> How are you feeling? </h2>
+	
+				<table>
+					<tr>
+					<% @emotions.each do |emotion| %>
+							<td>
+							<div class="emotion-buttons">	
+							<%= link_to emotion.name, "/emotions/#{emotion.id}", class: "myButton" %>
+							</div>
+							</td>
+
+					
+					<% end %>
+					</tr>
+				</table>
+		
+	</div>
+
+
