@@ -1,20 +1,16 @@
 <div class="container-fluid">
-	<h1> See the drink </h1>
-
-	<h2> Emotion Name</h2>
-
-		<div>
-			<%= @emotion.name %>
-		</div>
+	<div class="drink-font">
+		<h1 > You chose: <%= @emotion.name %> </h1>
+		<h2>Here's your drink! </h2>
+	</div>
 
 
-		
-	<h2> Emotion Drink</h2>
+	<div>
+		<h2 class="drink-font"> <%= @drink.name %></h2>
+		<%= image_tag @drink.image, class: "drink-image" %>
+	</div>		
 
-		<div>
-			<%= @drink.name %>
-		</div>
-		
+
 
 </div>
 

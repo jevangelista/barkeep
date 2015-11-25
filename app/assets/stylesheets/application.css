@@ -245,9 +245,20 @@ top: 115px;
 
 
 
-
 /******* END Bar Code  ********/
 
+
+/******* START Drink Code  ********/
+.drink-font {
+  text-align: center;
+}
+
+.drink-image {
+  width: 30%;
+  float: center;
+}
+
+/******* END Drink Code  ********/
 
 
 
