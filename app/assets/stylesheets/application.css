@@ -193,6 +193,16 @@ top: 115px;
 
 }
 
+.emotion-table1 {
+  float: right;
+  margin-right: 200px;
+}
+
+.emotion-table2 {
+  margin-left: 210px;
+
+}
+
 .myButton {
   -moz-box-shadow: 0px 0px 0px 2px #9fb4f2;
   -webkit-box-shadow: 0px 0px 0px 2px #9fb4f2;
