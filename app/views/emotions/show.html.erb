@@ -5,10 +5,27 @@
 	</div>
 
 
-	<div>
-		<h2 class="drink-font"> <%= @drink.name %></h2>
+	<div class="drink-section">
+		<h2> <%= @drink.name %></h2>
 		<%= image_tag @drink.image, class: "drink-image" %>
 	</div>		
+
+	<div class="drink-ingredients-section container">
+		<h2> Ingredients: </h2>
+		<% @drink.ingredients.each do |i| %>
+			<p><%= i %></p>
+			<% end %>
+
+	</div>
+
+	<div class="drink-instructions-section container">
+		<h2> Instructions: </h2>
+		<p> <%= @drink.instructions %></p>
+
+	</div>
+
+
+
 
 
 

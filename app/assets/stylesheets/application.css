@@ -255,7 +255,18 @@ top: 115px;
 
 .drink-image {
   width: 30%;
-  float: center;
+}
+
+.drink-section {
+  text-align: center;
+}
+
+.drink-ingredients-section {
+  background-color: #4d4d4d;
+}
+
+.drink-instructions-section {
+  background-color: #2F4F4F;
 }
 
 /******* END Drink Code  ********/
