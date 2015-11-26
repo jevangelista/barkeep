@@ -10,24 +10,27 @@
 		<%= image_tag @drink.image, class: "drink-image" %>
 	</div>		
 
-	<div class="drink-ingredients-section container">
-		<h2> Ingredients: </h2>
-		<% @drink.ingredients.each do |i| %>
-			<p><%= i %></p>
-			<% end %>
-
-	</div>
-
-	<div class="drink-instructions-section container">
-		<h2> Instructions: </h2>
-		<p> <%= @drink.instructions %></p>
-
-	</div>
-
-
-
-
-
-
 </div>
+
+
+	<table align="center">
+		<tr>
+			<td class="drink-td">
+				<div class="drink-ingredients-section">
+					<h2> Ingredients: </h2>
+					<% @drink.ingredients.each do |i| %>
+						<p><%= i %></p>
+						<% end %>
+
+				</div>
+			</td>
+			<td class="drink-td">
+				<div class="drink-instructions-section">
+					<h2> Instructions: </h2>
+					<p> <%= @drink.instructions %></p>
+
+				</div>
+			</td>
+		</tr>
+	</table>
 

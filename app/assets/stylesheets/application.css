@@ -153,6 +153,7 @@ body {
   background-color: #4d4d4d;
   text-align: center;
   padding: 50px;
+
 }
 
 
@@ -271,10 +272,30 @@ top: 115px;
 
 .drink-ingredients-section {
   background-color: #a8a8a8;
+  height: 405px;
+  text-align: center;
+  padding-top: 20px;
+  font-size: 15px;
 }
 
 .drink-instructions-section {
   background-color: #599bb3;
+  height: 405px;
+  text-align: center;
+  padding: 20px;
+  font-size: 15px;
+
+}
+
+.drink-td {
+  width: 50%;
+
+}
+
+.instruction-ingredients {
+  text-align: center;
+  display:block;
+
 }
 
 /******* END Drink Code  ********/
