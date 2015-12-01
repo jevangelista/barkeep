@@ -270,20 +270,26 @@ top: 115px;
   text-align: center;
 }
 
-.drink-ingredients-section {
+.ingredient-instructions-table {
   background-color: #a8a8a8;
-  height: 405px;
-  text-align: center;
-  padding-top: 20px;
-  font-size: 15px;
+  vertical-align: text-top;
+  border: 2px solid black;
+}
+
+.drink-ingredients-section {
+ padding: 20px; 
+ vertical-align: text-top;
+ text-align: center;
+ border: 2px solid black;
+ 
 }
 
 .drink-instructions-section {
-  background-color: #599bb3;
-  height: 405px;
-  text-align: center;
-  padding: 20px;
-  font-size: 15px;
+ padding: 20px;
+ vertical-align: text-top;
+ text-align: center;
+ border: 2px solid black;
+
 
 }
 
@@ -296,6 +302,36 @@ top: 115px;
   text-align: center;
   display:block;
 
+}
+
+/* Start of Column CSS */
+#container2 {
+  clear:left;
+  float:left;
+  width:100%;
+  overflow:hidden;
+  background:#ffa7a7; /* column 2 background colour */
+}
+#container1 {
+  float:left;
+  width:100%;
+  position:relative;
+  right:50%;
+  background:#fff689; /* column 1 background colour */
+}
+#col1 {
+  float:left;
+  width:46%;
+  position:relative;
+  left:52%;
+  overflow:hidden;
+}
+#col2 {
+  float:left;
+  width:46%;
+  position:relative;
+  left:56%;
+  overflow:hidden;
 }
 
 /******* END Drink Code  ********/

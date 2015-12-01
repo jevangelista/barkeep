@@ -13,24 +13,21 @@
 </div>
 
 
-	<table align="center">
-		<tr>
-			<td class="drink-td">
-				<div class="drink-ingredients-section">
-					<h2> Ingredients: </h2>
+
+<div id="container2">
+	<div id="container1">
+		<div id="col1">
+			<!-- Column one start -->
+				<h2> Ingredients: </h2>
 					<% @drink.ingredients.each do |i| %>
 						<p><%= i %></p>
 						<% end %>
-
-				</div>
-			</td>
-			<td class="drink-td">
-				<div class="drink-instructions-section">
-					<h2> Instructions: </h2>
+		</div>
+		<div id="col2">
+			<!-- Column two start -->
+			<h2> Instructions: </h2>
 					<p> <%= @drink.instructions %></p>
-
-				</div>
-			</td>
-		</tr>
-	</table>
-
+			<!-- Column two end -->
+		</div>
+	</div>
+</div>
