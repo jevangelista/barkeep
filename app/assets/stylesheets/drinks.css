@@ -54,12 +54,14 @@
 	float: left;
 	text-align: center;
 	margin-left: 13%;
+
 }
 
 .login-right {
 	float: right;
 	text-align: center;
 	margin-right: 13%;
+	
  
 }
 
@@ -68,6 +70,12 @@
   color: #16A085;
 
 }
+
+.overlay-left, .overlay-right {
+  font-size: 30px;
+
+}
+
 
 
 

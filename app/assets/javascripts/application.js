@@ -18,13 +18,27 @@
 
 $(document).ready(function(){
 
-	       //Create click event to show overlay 
-	$(".splash-login-area").hover(function(){
+//hover for left box
+$(".login-left").hover(function(){
 
-	  	$(".login-left").addClass( "overlay" );
-	      console.log("this works");
+	  	$(this).addClass( "overlay" );
+	  	$(this).html('<div class="overlay-left">Come on in and join us at the bar!</div>');
 	      },function() {
-    	$(".login-left").removeClass( "overlay" );
+    	$(this).removeClass( "overlay" );
+    	$(this).html("Not a regular?");
+
+
+  }
+);
+
+//hover for right box
+$(".login-right").hover(function(){
+
+	  	$(this).addClass( "overlay" );
+	  	$(this).html('<div class="overlay-right">Make yourself comfy and get a drink!</div>');
+	      },function() {
+    	$(this).removeClass( "overlay" );
+    	$(this).html("Returning member?");
   }
 );
 
