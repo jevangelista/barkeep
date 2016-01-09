@@ -15,3 +15,23 @@
 //= require bootstrap
 //= require turbolinks
 //= require_tree .
+
+$(document).ready(function(){
+
+	       //Create click event to show overlay 
+	$(".splash-login-area").hover(function(){
+
+	  	$(".login-left").addClass( "overlay" );
+	      console.log("this works");
+	      },function() {
+    	$(".login-left").removeClass( "overlay" );
+  }
+);
+
+});
+
+
+// $splashBox.click(function(event) {
+//   	($this).addClass( "overlay" );
+// });
+

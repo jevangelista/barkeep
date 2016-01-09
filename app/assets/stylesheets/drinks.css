@@ -1,0 +1,75 @@
+/******* START Splash Code  ********/
+
+.splash-font {
+	font-family: 'Prociono', serif;
+}
+
+.splash-font-h1, .splash-center {
+	text-align: center;
+	color: #FFEBCD;
+}
+
+.splash-font-h1 {
+	font-size: 40px;
+}
+
+.splash-img {
+    max-width: 100%;
+    max-height: 30%;
+    margin: auto 0;
+    text-align: center
+}
+
+.splash-img-left {
+	float: left;
+	width: 50%;
+}
+
+.splash-img-right {
+ 	float:right;
+	width: 50%;
+
+}
+
+.splash-login-area {
+	height: 275px;
+	max-width: 100%;
+	margin: 3%; 
+}
+
+.login-left, .login-right {
+	background-color: #16A085;
+	border: 10px solid white;
+	height: 220px;
+	width: 400px;
+	color: #333333;
+	font-weight: bold;
+	font-size: 40px;
+	padding: 30px;
+
+
+}
+
+.login-left {
+	float: left;
+	text-align: center;
+	margin-left: 13%;
+}
+
+.login-right {
+	float: right;
+	text-align: center;
+	margin-right: 13%;
+ 
+}
+
+.overlay {
+  background-color: rgba(0,0,0,0.7);
+  color: #16A085;
+
+}
+
+
+
+
+/******* END Splash Code  ********/
