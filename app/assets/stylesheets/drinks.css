@@ -89,8 +89,16 @@
 
 }
 
-@media screen and (min-width: 500px) {
-	
+@media screen and (max-width: 768px) {
+	.login-left, .login-right {
+		border: 10px solid #442D1A;
+		width: 100%;
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: 3%;
+		padding: 2%;
+	}
+
 }
 
 
