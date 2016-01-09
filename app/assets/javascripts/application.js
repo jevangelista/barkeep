@@ -22,10 +22,10 @@ $(document).ready(function(){
 $(".login-left").hover(function(){
 
 	  	$(this).addClass( "overlay" );
-	  	$(this).html('<div class="overlay-left">Come on in and join us at the bar!</div>');
+	  	$(this).html('<div class="overlay-left">Come on in and join us!<br><br><a class="login-link" href="/sessions/new">Sign Up</a></div>');
 	      },function() {
     	$(this).removeClass( "overlay" );
-    	$(this).html("Not a regular?");
+    	$(this).html("New customers");
 
 
   }
@@ -35,10 +35,10 @@ $(".login-left").hover(function(){
 $(".login-right").hover(function(){
 
 	  	$(this).addClass( "overlay" );
-	  	$(this).html('<div class="overlay-right">Make yourself comfy and get a drink!</div>');
+	  	$(this).html('<div class="overlay-right">Step right in!<br><br><a class="login-link" href="/users/new">Login</a></div>');
 	      },function() {
     	$(this).removeClass( "overlay" );
-    	$(this).html("Returning member?");
+    	$(this).html("Returning members");
   }
 );
 
