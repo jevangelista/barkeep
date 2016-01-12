@@ -37,12 +37,29 @@
 	width: 70%;
 }
 
-.right-bartender {
+.right-bubble {
 	background: white;
 	display: none;
-	border-radius: 5px;
+	position: relative;
 	padding: 3%;
+	border-radius: 15px;
+	box-shadow:;
+}
 
+.right-bubble:after {
+	content: "";
+	display: block;
+	position: absolute;
+
+	width: 0;
+	height: 0;
+
+	border-right: 8px solid transparent;
+	border-left: 8px solid transparent;
+	border-bottom: 15px solid #ffffff;
+
+	left: 150px;
+	top: -15px;
 }
 
 @media screen and (min-width: 768px) {
@@ -56,11 +73,28 @@
 		float: left;
 	}
 
-	.right-bartender {
+	.right-bubble {
 	float: right;
 	width: 30%;
 	height: auto;
 	margin-top: 10%;
+	}
+
+	.right-bubble:after {
+		content: "";
+	display: block;
+	position: absolute;
+
+	width: 0;
+	height: 0;
+
+	border-top: 8px solid transparent;
+	border-bottom: 8px solid transparent;
+	border-right: 15px solid #ffffff;
+
+	left: -23px;
+	top: 15px;
+
 
 	}
 
