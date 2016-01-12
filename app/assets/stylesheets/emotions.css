@@ -1,8 +1,8 @@
 /******* START Bar Code  ********/
-.emotions-font-h1 {
+.emotions-font {
 	text-align: center;
 	color: #FFEBCD;
-	font-size: 3em;
+
 }
 
 .click-div {
@@ -62,6 +62,41 @@
 	top: -15px;
 }
 
+.emotion-button-group {
+	clear: both;
+	background-color: teal;
+	margin: 0 auto;
+}
+
+.emotion-button{
+	background-color: gray;
+	color: #000080;
+	border: 5px black solid;
+	text-decoration: none;
+	text-align: center;
+	font-weight: bold;
+	font-size: 2em;
+	width: 100%;
+	height: 50px;
+
+	margin-top: 2%;
+	margin-bottom: 2%;
+}
+
+.emotion-button:hover {
+	background-color: white;
+}
+
+.emotion-button a{
+	color: #3B3178;
+}
+
+.emotion-button a:hover{
+	text-decoration: none;
+
+}
+
+
 @media screen and (min-width: 768px) {
 	.bartender-img {
 		max-width: 60%;
@@ -94,7 +129,15 @@
 
 	left: -23px;
 	top: 15px;
+	}
 
+	.emotion-button {
+		float: left;
+		width: 22%;
+		height: 15%;
+		padding-top: 0%;
+		margin-right: 1%;
+		margin-left: 1%;
 
 	}
 
