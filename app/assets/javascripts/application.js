@@ -20,9 +20,13 @@ $(document).ready(function(){
 
 /****** Start Emotions Page JS *******/ 
 
-	$( ".bartender-img" ).click(function() {
-	  $('.right-bubble').show().text("Hello, my name is Charlie! I will be your personal bartender for today. Select one of the options below, and I'll serve just the drink for you!");
-	  console.log("You're click this!");
+	$( ".bartender-img" ).hover(function() {
+	  $('.right-bubble').fadeIn( "slow", function() {
+    // Animation complete
+    	$(this).text("Hello, my name is Charlie! I will be your personal bartender for today. Select one of the options below, and I'll serve just the drink for you!").fadeIn( "fast" );
+  });
+
+
 
 	});
 
