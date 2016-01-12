@@ -12,6 +12,7 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require jquery-ui.min.js
 //= require bootstrap
 //= require turbolinks
 //= require_tree .
@@ -21,10 +22,36 @@ $(document).ready(function(){
 /****** Start Emotions Page JS *******/ 
 
 	$( ".bartender-img" ).click(function() {
-	  $('.right-bubble').show().text("Hello, my name is Tobi! I will be your personal bartender for today. Select one of the options below, and I'll serve just the drink for you!");
+	  $('.right-bubble').show().text("Hello, my name is Charlie! I will be your personal bartender for today. Select one of the options below, and I'll serve just the drink for you!");
 	  console.log("You're click this!");
 
 	});
+
+	$("h2").click(function(){
+		console.log("Emotion clicked!");
+	
+		  //Show the overlay.
+        $overlay.show();
+	})
+
+	var $overlay = $('<div id="overlay"><div id="bounce" class="bounce"><img id="shaker-img" src="/images/shaker.png"><div class="shaker-div">Click Shaker to Reveal Your Drink</div></div></div>');
+
+	 // Add Overlay
+     $(".shaker-overlay").append($overlay);
+
+	function getAttention(elementClass,initialDistance, times, damping) {
+	  for(var i=1; i<=times; i++){
+	      var an = Math.pow(-1,i)*initialDistance/(i*damping);
+	      $('.'+elementClass).animate({'top':an},100);
+	  }
+	  $('.'+elementClass).animate({'top':0},100);
+	}
+
+	$("#bounce").click(function(){
+		console.log("Overlay being clicked");
+		getAttention("bounce", 75, 10, 1);
+	})
+
 
 /****** End Emotions Page JS *******/ 
 

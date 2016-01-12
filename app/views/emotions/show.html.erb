@@ -1,33 +1,35 @@
-<div class="container-fluid">
-	<div class="drink-font">
-		<h1 > You chose: <%= @emotion.name %> </h1>
-		<h2>Here's your drink! </h2>
+<div class="shaker-overlay">
+	<div class="container-fluid">
+		<div class="drink-font">
+			<h1 > You chose: <%= @emotion.name %> </h1>
+			<h2>Here's your drink! </h2>
+		</div>
+
+
+		<div class="drink-section">
+			<h2> <%= @drink.name %></h2>
+			<%= image_tag @drink.image, class: "drink-image" %>
+		</div>		
+
 	</div>
 
 
-	<div class="drink-section">
-		<h2> <%= @drink.name %></h2>
-		<%= image_tag @drink.image, class: "drink-image" %>
-	</div>		
 
-</div>
-
-
-
-<div id="container2">
-	<div id="container1">
-		<div id="col1">
-			<!-- Column one start -->
-				<h2> Ingredients: </h2>
-					<% @drink.ingredients.each do |i| %>
-						<p><%= i %></p>
-						<% end %>
-		</div>
-		<div id="col2">
-			<!-- Column two start -->
-			<h2> Instructions: </h2>
-					<p> <%= @drink.instructions %></p>
-			<!-- Column two end -->
+	<div id="container2">
+		<div id="container1">
+			<div id="col1">
+				<!-- Column one start -->
+					<h2> Ingredients: </h2>
+						<% @drink.ingredients.each do |i| %>
+							<p><%= i %></p>
+							<% end %>
+			</div>
+			<div id="col2">
+				<!-- Column two start -->
+				<h2> Instructions: </h2>
+						<p> <%= @drink.instructions %></p>
+				<!-- Column two end -->
+			</div>
 		</div>
 	</div>
 </div>

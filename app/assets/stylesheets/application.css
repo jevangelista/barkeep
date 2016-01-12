@@ -11,6 +11,9 @@
  * file per style scope.
  *
  *= require bootstrap
+ *= require jquery-ui.min.css
+ *= require jquery-ui.structure.min.css
+ *= require jquery-ui.theme.min.css
  *= require_self
  *= require_tree .
  */
