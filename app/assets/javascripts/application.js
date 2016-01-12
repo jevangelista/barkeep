@@ -18,6 +18,10 @@
 
 $(document).ready(function(){
 
+ $('[data-toggle="tooltip"]').tooltip();
+
+ $('[data-toggle="popover"]').popover();
+
 //hover for left box
 $(".login-left").hover(function(){
 

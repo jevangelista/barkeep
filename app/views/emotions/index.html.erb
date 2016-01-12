@@ -1,54 +1,20 @@
-<div class="container-fluid">
-	<h1 class="splash-font-h1"> Welcome to the Bar! </h1>
 
-	<div class="row">
-					<div class="col-xs-12 col-sm-6 col-md-8">
-						<img class="bartender-img" src="/images/bartender.png">
-					</div>
+<h1 class="emotions-font-h1"> Welcome to the Bar! </h1>
 
-					<div class="container col-xs-6 col-md-4">
-							Hello, my name is Tobi! 
-							I will be your personal bartender for today. 
-							Select one of the options below, and I'll serve just the drink for you!
-						</p>
-					</div>
+<div class="container-fluid bartender-container">
+		<div class="click-div">
+			<span class="click-span"> Click Me! </span>
+		</div>
+		<div class="left-bartender">
+			<img class="bartender-img" src="/images/bartender.png"  data-toggle="popover" data-placement="right" data-content="Hello, my name is Tobi! I will be your personal bartender for today. Select one of the options below, and I'll serve just the drink for you!">
+		</div>
+		<div class="right-bartender"> 
 
-
-	</div>
-
+		</div>
 </div>
 
-	<div class="emotion-section">
-		<h2 class="emotion-font"> How are you feeling? </h2>
-			<div class="table-responsive">
-				<table class="emotion-table1">
-					<tr>
-					<% @emotions[0..3].each do |emotion| %>
-							<td>
-							<div class="emotion-buttons">	
-							<%= link_to emotion.name, "/emotions/#{emotion.id}", class: "myButton" %>
-							</div>
-							</td>
 
-					
-					<% end %>
-					</tr>
-				</table>
+<div class="bottom-bubble"> </div>
 
-				<table class="emotion-table2">
-					<tr>
-					<% @emotions[4..7].each do |emotion| %>
-							<td>
-							<div class="emotion-buttons">	
-							<%= link_to emotion.name, "/emotions/#{emotion.id}", class: "myButton" %>
-							</div>
-							</td>
-
-					
-					<% end %>
-					</tr>
-				</table>
-			</div>
-	</div>
 
 

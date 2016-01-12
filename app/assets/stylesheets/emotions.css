@@ -1,0 +1,74 @@
+/******* START Bar Code  ********/
+.emotions-font-h1 {
+	text-align: center;
+	color: #FFEBCD;
+	font-size: 3em;
+}
+
+.click-div {
+	margin-top: 1%;
+	text-align: center;
+	font-weight: bold;
+}
+
+.click-span {
+	background-color: white;
+	padding: 5px;
+	border: 2px black solid;
+
+}
+
+.bartender-container {
+	background-color: #4d4d4d;
+	border-radius: 5%;
+	margin-left: 3%;
+	margin-right: 3%;
+}
+
+.bartender-img {
+	max-width: 100%;
+	height: auto;
+	padding-top: 0.5%;
+	margin-left: 20%;
+	
+}
+
+.left-bartender {
+	float: left;
+	width: 70%;
+}
+
+.right-bartender {
+	background: white;
+	float: right;
+	width: 30%;
+	height: 100px;
+
+
+}
+
+
+.bottom-bubble {
+	background: white;
+	width: 100px;
+	height: 100px;
+}
+
+
+@media screen and (min-width: 768px) {
+	.bartender-img {
+		max-width: 60%;
+		margin-left: 40%;
+
+	}
+
+	.left-bartender {
+		padding-left: auto;
+	}
+
+}
+
+
+
+
+/******* END Bar Code  ********/
