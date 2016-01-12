@@ -26,25 +26,19 @@ $(document).ready(function(){
 
 	});
 
-	$("h2").click(function(){
-		console.log("Emotion clicked!");
-	
-
-	})
-
-	function getAttention(elementClass,initialDistance, times, damping) {
-	  for(var i=1; i<=times; i++){
-	      var an = Math.pow(-1,i)*initialDistance/(i*damping);
-	      $('.'+elementClass).animate({'top':an},100);
-	  }
-	  $('.'+elementClass).animate({'top':0},100);
-	}
-
 	$("#bounce").click(function(){
 		console.log("Overlay being clicked");
-		getAttention("bounce", 75, 10, 1);
-	})
-
+			    $(this).animate({top: 70},"fast")
+			    .animate({top: 0},"fast")
+			    .animate({top: 70},"fast")
+			    .animate({top: 0},"fast")
+			    .animate({top: 70},"fast")
+			    .animate({top: 0},"fast", function() {
+               // Animation complete.
+               $("#overlay").hide()
+            });
+		    	  
+	});
 
 /****** End Emotions Page JS *******/ 
 
