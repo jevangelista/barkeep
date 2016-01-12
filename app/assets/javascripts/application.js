@@ -14,7 +14,6 @@
 //= require jquery_ujs
 //= require jquery-ui.min.js
 //= require bootstrap
-//= require turbolinks
 //= require_tree .
 
 $(document).ready(function(){
@@ -30,14 +29,8 @@ $(document).ready(function(){
 	$("h2").click(function(){
 		console.log("Emotion clicked!");
 	
-		  //Show the overlay.
-        $overlay.show();
+
 	})
-
-	var $overlay = $('<div id="overlay"><div id="bounce" class="bounce"><img id="shaker-img" src="/images/shaker.png"><div class="shaker-div">Click Shaker to Reveal Your Drink</div></div></div>');
-
-	 // Add Overlay
-     $(".shaker-overlay").append($overlay);
 
 	function getAttention(elementClass,initialDistance, times, damping) {
 	  for(var i=1; i<=times; i++){
