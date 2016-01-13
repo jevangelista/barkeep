@@ -7,18 +7,21 @@
 	</div>
 </div>
 
-	<div class="container-fluid">
-		<div class="drink-font">
-			<h1 > You chose: <%= @emotion.name %> </h1>
-			<h2>Here's your drink! </h2>
-		</div>
-
-
-		<div class="drink-section">
-			<h2> <%= @drink.name %></h2>
-			<%= image_tag @drink.image, class: "drink-image" %>
-		</div>		
-
+<div class="container-fluid">
+	<h1 class="emotions-font larger-font"> <%= @drink.name %></h1>
+	<div class="animation">
+		<%= image_tag @drink.image, class: "drink-image" %>
 	</div>
+</div>
 
+<div class="container-fluid recipe-button-group">
 
+	  		<div class="recipe-button">
+				See Recipe
+	  		</div>
+
+	  		<div class="recipe-button">
+				Save Drink
+	  		</div>
+	  
+</div>	

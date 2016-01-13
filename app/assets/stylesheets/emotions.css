@@ -6,6 +6,10 @@
 
 }
 
+.larger-font {
+	font-size: 50px;
+}
+
 .click-div {
 	margin-top: 1%;
 	text-align: center;
@@ -42,7 +46,7 @@
 	background: white;
 	display: none;
 	position: relative;
-	padding: 3%;
+	padding: 2%;
 	border-radius: 15px;
 	box-shadow:;
 }
@@ -103,12 +107,10 @@
 	border-radius: 10px;
 	position:relative;
     margin-top:30%;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 #overlay {
-  background: rgba(0,0,0,0.7);
+  background-color: #1a1a1a;
   width: 100%;
   height: 1200px;
   position: absolute;
@@ -130,7 +132,97 @@
 	background-color: white;
 }
 
+/******* START Drink Code  ********/
+.drink-image {
+  width: 60%;
+}
+
+.animation {
+    font-weight: bold;
+    text-align: center;
+  	padding: 1%;
+	margin-left: auto;
+	margin-right: auto;
+    background-color: #4d4d4d;
+    border-radius: 10px;
+    -webkit-animation: glow 3s ease-in-out infinite;
+    animation: glow 3s ease-in-out infinite;
+    max-width: 100%;
+    max-height: 50%;
+  
+}
+
+@-webkit-keyframes glow 
+{
+  50% { box-shadow: 0 0 20px #aaf; }
+}
+
+@keyframes glow 
+{
+  50% { box-shadow: 0 0 20px #aaf; }
+}
+
+.recipe-button-group {
+	clear: both;
+	margin-left: auto;
+	margin: right: auto;
+	margin-top: 2%;
+}
+
+.recipe-button{
+	background-color: gray;
+	border: 5px black solid;
+	text-decoration: none;
+	text-align: center;
+	font-weight: bold;
+	font-size: 2em;
+	width: 100%;
+	height: 50px;
+
+	margin-top: 1%;
+	margin-bottom: 2%;
+	color: #212A55;
+
+}
+
+.recipe-button:hover {
+	background-color: white;
+}
+
+.recipe-button a{
+	color: #212A55;
+}
+
+.recipe-button a:hover{
+	text-decoration: none;
+
+}
+
+
 @media screen and (min-width: 768px) {
+	.drink-image {
+	  width: 50%;
+	}
+
+	.animation {
+	    max-width: 40%;
+	    max-height: 50%;
+	}
+
+	.recipe-button-group {
+		margin-left: 31%;
+	}
+
+	.recipe-button{
+		width: 25%;
+		height: 10%;
+		float: left;
+		margin-right: 3%;
+		margin: left: 5%;
+
+	}
+	
+
 	.bartender-img {
 		max-width: 60%;
 		margin-left: 40%;
@@ -139,6 +231,7 @@
 	.left-bartender {
 		padding-left: auto;
 		float: left;
+
 	}
 
 	.right-bubble {
@@ -146,6 +239,7 @@
 	width: 30%;
 	height: auto;
 	margin-top: 10%;
+	
 
 	}
 
@@ -195,4 +289,5 @@
 
 
 
-/******* END Bar Code  ********/
+
+
