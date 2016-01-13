@@ -19,7 +19,7 @@ $(document).ready(function(){
 
 /****** Start Emotions Page JS *******/ 
 
-	$( ".bartender-img" ).hover(function() {
+	$( ".bartender-container" ).hover(function() {
 	  $('.right-bubble').fadeIn( "slow", function() {
     // Animation complete
     	$(this).text("Hello, my name is Charlie! I will be your personal bartender for today. Select one of the options below, and I'll serve just the drink for you!").fadeIn( "fast" );
@@ -29,8 +29,15 @@ $(document).ready(function(){
 
 	});
 
+    var obj = document.createElement("audio");
+        obj.src="/sounds/shaker_sound.wav";
+        obj.volume=0.10;
+        obj.autoPlay=false;
+        obj.preLoad=true;       
+ 
 	$("#bounce").click(function(){
 		console.log("Overlay being clicked");
+				obj.play();
 			    $(this).animate({top: 70},"fast")
 			    .animate({top: 0},"fast")
 			    .animate({top: 70},"fast")
@@ -39,9 +46,12 @@ $(document).ready(function(){
 			    .animate({top: 0},"fast", function() {
                // Animation complete.
                $("#overlay").hide()
+
             });
 		    	  
 	});
+
+
 
 /****** End Emotions Page JS *******/ 
 
