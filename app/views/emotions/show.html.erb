@@ -22,21 +22,3 @@
 	</div>
 
 
-
-	<div id="container2">
-		<div id="container1">
-			<div id="col1">
-				<!-- Column one start -->
-					<h2> Ingredients: </h2>
-						<% @drink.ingredients.each do |i| %>
-							<p><%= i %></p>
-							<% end %>
-			</div>
-			<div id="col2">
-				<!-- Column two start -->
-				<h2> Instructions: </h2>
-						<p> <%= @drink.instructions %></p>
-				<!-- Column two end -->
-			</div>
-		</div>
-	</div>
