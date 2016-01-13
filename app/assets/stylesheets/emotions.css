@@ -65,13 +65,12 @@
 
 .emotion-button-group {
 	clear: both;
-	background-color: teal;
+	background-color: #3E0609;
 	margin: 0 auto;
 }
 
 .emotion-button{
 	background-color: gray;
-	color: #000080;
 	border: 5px black solid;
 	text-decoration: none;
 	text-align: center;
@@ -89,7 +88,7 @@
 }
 
 .emotion-button a{
-	color: #3B3178;
+	color: #212A55;
 }
 
 .emotion-button a:hover{
@@ -100,7 +99,7 @@
 /** Overlay CSS **/
 
 #bounce {
-	background-color: teal;
+	background-color: #4a0000;
 	border-radius: 10px;
 	position:relative;
     height:40%;
