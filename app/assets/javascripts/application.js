@@ -17,13 +17,28 @@
 
 $(document).ready(function(){
 
-/****** Start Emotions Page JS *******/ 
+/****** Start Drinks Page JS *******/ 
+
+	$('a[href^="#"]').on('click',function (e) {
+	    e.preventDefault();
+
+	    var target = this.hash;
+	    var $target = $(target);
+
+	    $('html, body').stop().animate({
+	        'scrollTop': $target.offset().top
+	    }, 900, 'swing', function () {
+	        window.location.hash = target;
+	    });
+	});
+
+/****** End Drinks Page JS *******/ 
 
 	$( ".bartender-container" ).hover(function() {
 	  $('.right-bubble').fadeIn( "slow", function() {
     // Animation complete
     	$(this).text("Hello, my name is Charlie! I will be your personal bartender today. Select one of the options below, and I'll serve just the drink for you!").fadeIn( "fast" );
-  });
+ 	 });
 
 
 
@@ -46,6 +61,7 @@ $(document).ready(function(){
 			    .animate({top: 0},"fast", function() {
                // Animation complete.
                $("#overlay").hide()
+
 
             });
 		    	  

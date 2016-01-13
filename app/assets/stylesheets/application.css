@@ -117,52 +117,7 @@ body {
 
 
 
-/******* START Drink Code  ********/
-.drink-font {
-  text-align: center;
-}
 
-.drink-image {
-  width: 30%;
-}
-
-.drink-section {
-  text-align: center;
-}
-
-.ingredient-instructions-table {
-  background-color: #a8a8a8;
-  vertical-align: text-top;
-  border: 2px solid black;
-}
-
-.drink-ingredients-section {
- padding: 20px; 
- vertical-align: text-top;
- text-align: center;
- border: 2px solid black;
- 
-}
-
-.drink-instructions-section {
- padding: 20px;
- vertical-align: text-top;
- text-align: center;
- border: 2px solid black;
-
-
-}
-
-.drink-td {
-  width: 50%;
-
-}
-
-.instruction-ingredients {
-  text-align: center;
-  display:block;
-
-}
 
 /* Start of Column CSS */
 #container2 {

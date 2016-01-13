@@ -107,6 +107,8 @@
 	border-radius: 10px;
 	position:relative;
     margin-top:30%;
+    margin-left: 3%;
+    margin-right: 3%;
 }
 
 #overlay {
@@ -198,31 +200,29 @@
 
 }
 
+#recipe-container {
+	color: white;
+	margin-top: 3%;
+	padding: 2%;
+	overflow: hidden;
+
+
+}
+
+.left-ingredients, .right-instructions {
+	border: 5px solid white;
+	background-color: #4a0000;
+	padding: 5%;
+	margin: 2%;
+	font-size: 18px;
+}
+
+
+
+/* Start of Column CSS */
+
 
 @media screen and (min-width: 768px) {
-	.drink-image {
-	  width: 50%;
-	}
-
-	.animation {
-	    max-width: 40%;
-	    max-height: 50%;
-	}
-
-	.recipe-button-group {
-		margin-left: 31%;
-	}
-
-	.recipe-button{
-		width: 25%;
-		height: 10%;
-		float: left;
-		margin-right: 3%;
-		margin: left: 5%;
-
-	}
-	
-
 	.bartender-img {
 		max-width: 60%;
 		margin-left: 40%;
@@ -281,6 +281,39 @@
 	}
 
 
+	.drink-image {
+	  width: 50%;
+	}
+
+	.animation {
+	    max-width: 40%;
+	    max-height: 50%;
+	}
+
+	.recipe-button-group {
+		margin-left: 30%;
+	}
+
+	.recipe-button{
+		width: 25%;
+		height: 10%;
+		float: left;
+		margin-right: 6%;
+		margin: left: 4%;
+
+	}
+
+	.left-ingredients, .right-instructions {
+	float: left;
+	width: 45%;
+
+	}
+	
+	#recipe-container {
+	margin-left: 2%;
+
+
+	}
 
 
 
