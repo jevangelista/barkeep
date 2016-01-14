@@ -1,8 +1,24 @@
 <div class="container-fluid">
 	<h1>Welcome, <%= @user.name %></h1>
 
+
 	<div>
 	<%= button_to "Go to the Bar", emotions_path, method: "get",  class: "btn btn-default"  %>
 	</div>
+
+	<div class="drinks-container">
+		<% @favorites.each do |favorite| %>
+			<div class="drink-container">
+				<div class="fav-img">
+					<%= image_tag favorite.image, class: "fav-drink-image" %>
+				</div>
+				<div class="fav-name">
+					<h3><%= favorite.name %></h3>
+				</div>
+				
+			</div>
+		<% end %>
+	</div>
+
 
 </div>

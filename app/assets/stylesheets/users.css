@@ -1,0 +1,39 @@
+
+.fav-drink-image {
+	max-width: 60%;
+
+}
+
+.drinks-container {
+	
+}
+
+.fav-name {
+	text-align: center;
+}
+
+.fav-img {
+	background-color: black;
+	padding-left: 30%;
+
+}
+
+.drink-container {
+	background-color: gray;
+	margin: 2%;
+	padding: 2%;
+}
+
+@media screen and (min-width: 768px) {
+	.fav-drink-image {
+	
+	}
+
+	.drink-container {
+		background-color: gray;
+		max-width: 100%;
+		margin: 2%;
+		padding: 2%;
+	}
+
+}
