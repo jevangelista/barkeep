@@ -1,0 +1,85 @@
+/******* START Drink Code  ********/
+.drink-image {
+  width: 60%;
+}
+
+.animation {
+    font-weight: bold;
+    text-align: center;
+  	padding: 1%;
+	margin-left: auto;
+	margin-right: auto;
+    background-color: #4d4d4d;
+    border-radius: 10px;
+    -webkit-animation: glow 3s ease-in-out infinite;
+    animation: glow 3s ease-in-out infinite;
+    max-width: 100%;
+    max-height: 50%;
+  
+}
+
+@-webkit-keyframes glow 
+{
+  50% { box-shadow: 0 0 20px #aaf; }
+}
+
+@keyframes glow 
+{
+  50% { box-shadow: 0 0 20px #aaf; }
+}
+
+
+
+#recipe-container {
+	color: white;
+	margin-top: 3%;
+	padding: 2%;
+	overflow: hidden;
+
+
+}
+
+.left-ingredients, .right-instructions {
+	border: 5px solid white;
+	background-color: #4a0000;
+	padding: 5%;
+	margin: 2%;
+	font-size: 18px;
+}
+
+
+
+/* Start of Column CSS */
+
+
+@media screen and (min-width: 768px) {
+	
+	.drink-image {
+	  width: 50%;
+	}
+
+	.animation {
+	    max-width: 40%;
+	    max-height: 50%;
+	}
+
+	.left-ingredients, .right-instructions {
+	float: left;
+	width: 45%;
+
+	}
+	
+	#recipe-container {
+	margin-left: 2%;
+
+
+	}
+
+
+
+}
+
+
+
+
+

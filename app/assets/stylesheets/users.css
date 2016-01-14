@@ -10,6 +10,23 @@
 
 .fav-name {
 	text-align: center;
+	background-color: teal;
+	margin-top: 3%;
+}
+
+.fav-name-font {
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 20px;
+	color: #2a2a2a;
+
+}
+.fav-name-font:hover {
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 20px;
+	color: #2a2a2a;
+
 }
 
 .fav-img {
@@ -20,8 +37,8 @@
 
 .drink-container {
 	background-color: gray;
-	margin: 2%;
-	padding: 2%;
+	margin: 3%;
+	padding: 1%;
 }
 
 @media screen and (min-width: 768px) {
@@ -30,10 +47,9 @@
 	}
 
 	.drink-container {
-		background-color: gray;
-		max-width: 100%;
-		margin: 2%;
-		padding: 2%;
+		float: left;
+		max-width: 25%;
+
 	}
 
 }

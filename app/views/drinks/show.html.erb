@@ -1,1 +1,22 @@
-show.html.erb
+<div class="container-fluid">
+	<h1 class="emotions-font larger-font"> <%= @drink.name %></h1>
+	<div class="animation">
+		<%= image_tag @drink.image, class: "drink-image" %>
+	</div>
+</div>
+
+<div id="recipe-container">
+	    <div class="left-ingredients">
+	                <h2> Ingredients: </h2>
+	                	<ul>
+	                    <% @drink.ingredients.each do |i| %>
+	                        <li><p><%= i %></p></li>
+	                        <% end %>
+	                     </ul>
+	    </div>
+	    <div class="right-instructions">
+
+	            <h2> Instructions: </h2>
+	                    <p> <%= @drink.instructions %></p>
+	    </div>
+</div>
