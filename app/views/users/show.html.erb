@@ -6,6 +6,7 @@
 	<%= button_to "Go to the Bar", emotions_path, method: "get",  class: "btn btn-default"  %>
 	</div>
 
+	<h1 class="fav-head-font">Here Are Your Favorite Drinks </h1>
 	<div class="drinks-container">
 		<% @favorites.each do |favorite| %>
 			<div class="drink-container">
@@ -14,7 +15,7 @@
 				</div>
 				<div class="fav-name">
 
-					<%= link_to favorite.name, "/drinks/#{favorite.id}" %>
+					<%= link_to favorite.name, "/drinks/#{favorite.id}", class: "fav-name-font" %>
 				</div>
 				
 			</div>

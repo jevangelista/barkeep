@@ -13,7 +13,7 @@ Rails.application.routes.draw do
   get "/emotions", to: "emotions#index"
   get "/emotions/:id", to: "emotions#show"
 
-  get "/drinks/:id", to: "drink#show"
+  get "/drinks/:id", to: "drinks#show"
 
   # config/routes.rb
 	resources :drinks do

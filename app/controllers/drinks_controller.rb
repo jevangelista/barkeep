@@ -6,7 +6,6 @@ class DrinksController < ApplicationController
 
 	def show
 	  	@drink = Drink.find(params[:id])
-	    @emotion = Emotion.find(params[:emotion_id])
 	    render :show
   	end
 

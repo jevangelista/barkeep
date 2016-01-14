@@ -76,7 +76,7 @@ $(document).ready(function(){
 	$(".login-left").hover(function(){
 
 		  	$(this).addClass( "overlay" );
-		  	$(this).html('<div class="overlay-left">Come on in and join us!<br><br><a class="login-link" href="/sessions/new">Sign Up</a></div>');
+		  	$(this).html('<div class="overlay-left">Come on in and join us!<br><br><a class="login-link" href="/users/new">Sign Up</a></div>');
 		      },function() {
 	    	$(this).removeClass( "overlay" );
 	    	$(this).html("New customers");
@@ -89,7 +89,7 @@ $(document).ready(function(){
 	$(".login-right").hover(function(){
 
 		  	$(this).addClass( "overlay" );
-		  	$(this).html('<div class="overlay-right">Step right in!<br><br><a class="login-link" href="/users/new">Login</a></div>');
+		  	$(this).html('<div class="overlay-right">Step right in!<br><br><a class="login-link" href="/sessions/new">Login</a></div>');
 		      },function() {
 	    	$(this).removeClass( "overlay" );
 	    	$(this).html("Returning members");
