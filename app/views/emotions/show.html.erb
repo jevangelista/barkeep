@@ -21,17 +21,24 @@
 	  		</div>
 
 	  		<div class="recipe-button">
-				Save Drink
+				<% if current_user %>
+					  <%= link_to "Save Drink",   favorite_drink_path(@drink, type: "favorite"), method: :put %>
+				<% end %>
 	  		</div>
 	  
 </div>	
 
+
+
+
 <div id="recipe-container">
 	    <div class="left-ingredients">
 	                <h2> Ingredients: </h2>
+	                	<ul>
 	                    <% @drink.ingredients.each do |i| %>
-	                        <p><%= i %></p>
+	                        <li><p><%= i %></p></li>
 	                        <% end %>
+	                     </ul>
 	    </div>
 	    <div class="right-instructions">
 

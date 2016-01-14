@@ -13,5 +13,11 @@ Rails.application.routes.draw do
   get "/emotions", to: "emotions#index"
   get "/emotions/:id", to: "emotions#show"
 
+  get "/drinks/:id", to: "drink#show"
+
+  # config/routes.rb
+	resources :drinks do
+	  put :favorite, on: :member
+	end
 
 end
