@@ -1,12 +1,16 @@
-<div class="container-fluid">
-	<h1>Welcome, <%= @user.name %></h1>
+<div class="page-header fav-head-font">
+  	<h1>Welcome, <%= @user.name %>!</h1>
 
 
 	<div>
-	<%= button_to "Go to the Bar", emotions_path, method: "get",  class: "btn btn-default"  %>
+	<%= button_to "Make a New Drink", emotions_path, method: "get",  class: "btn btn-default"  %>
 	</div>
+</div>
 
-	<h1 class="fav-head-font">Here Are Your Favorite Drinks </h1>
+<div class="container-fluid">
+
+
+	<h2 class="fav-head-font">Here Are Your Favorite Drinks </h2>
 	<div class="drinks-container">
 		<% @favorites.each do |favorite| %>
 			<div class="drink-container">
