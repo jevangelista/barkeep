@@ -21,6 +21,25 @@ body {
   font-family: 'Open Sans', sans-serif;
 }
 
+@font-face {
+  font-family: BebasNeue;
+  font-weight: bold;
+  src: url("/types/bebas.otf");
+}
+
+.type-bebas {
+  font-family: 'BebasNeue', sans-serif;
+}
+
+.type-news-cycle {
+  font-family: 'News Cycle', sans-serif;
+}
+
+.type-anon-pro {
+  font-family: 'Anonymous Pro', sans-serif;
+}
+
+
 
 
 /******* START Transparent Button Code  ********/
