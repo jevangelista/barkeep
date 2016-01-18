@@ -29,15 +29,23 @@ body {
 
 .type-bebas {
   font-family: 'BebasNeue', sans-serif;
+  letter-spacing: 3px;
 }
 
 .type-news-cycle {
   font-family: 'News Cycle', sans-serif;
+  letter-spacing: 2px;
+}
+
+h2.type-news-cycle {
+  font-size: 20px;
 }
 
 .type-anon-pro {
   font-family: 'Anonymous Pro', sans-serif;
 }
+
+
 
 
 
