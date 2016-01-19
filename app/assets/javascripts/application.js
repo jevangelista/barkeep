@@ -35,9 +35,9 @@ $(document).ready(function(){
 /****** End Drinks Page JS *******/ 
 
 	$( ".bartender-container" ).hover(function() {
-	  $('.right-bubble').fadeIn( "slow", function() {
+	  $('.right-bubble').fadeIn( "fast", function() {
     // Animation complete
-    	$(this).text("Hello, my name is Charlie! I will be your personal bartender today. Select one of the options below, and I'll serve just the drink for you!").fadeIn( "fast" );
+    	$(this).text("Hello, my name is Charlie! I will be your personal bartender today. Select one of the feelings below, and I'll serve just the drink for you!").fadeIn( "fast" );
  	 });
 
 
