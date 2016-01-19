@@ -11,32 +11,32 @@ Drink.destroy_all
 
 emotions = Emotion.create([
 	{
-		name: 'Happy'
+		name: 'HAPPY'
 	},
 	{
-		name: 'Sleepy'
+		name: 'SLEEPY'
 	},
 	{
-		name: 'Fancy'
+		name: 'FANCY'
 	},
 	{
-		name: 'Adventurous'
+		name: 'BOLD'
 	},
 	{
-		name: 'Romantic'
+		name: 'ROMANTIC'
 	},
 	{
-		name: 'Zany'
+		name: 'ZANY'
 	},
 	{
-		name: 'Relaxed'
+		name: 'RELAXED'
 	},
 	{
-		name: 'Pensive'
+		name: 'PENSIVE'
 	}
 	])
 
-drinks_happy = Emotion.find_by_name("Happy").drinks.create([
+drinks_happy = Emotion.find_by_name("HAPPY").drinks.create([
 	{
 		name: 'Mint Julep',
 		image: '/images/happy-mint-julep.png', 
@@ -57,7 +57,7 @@ drinks_happy = Emotion.find_by_name("Happy").drinks.create([
 	}
 	])
 
-drinks_sleepy = Emotion.find_by_name("Sleepy").drinks.create([
+drinks_sleepy = Emotion.find_by_name("SLEEPY").drinks.create([
 	{
 		name: 'White Russian',
 		image: '/images/sleepy-white-russian.png',
@@ -79,7 +79,7 @@ drinks_sleepy = Emotion.find_by_name("Sleepy").drinks.create([
 	])
 
 
-drinks_fancy = Emotion.find_by_name("Fancy").drinks.create([
+drinks_fancy = Emotion.find_by_name("FANCY").drinks.create([
 	{
 		name: 'Manhattan',
 		image: '/images/fancy-manhattan.png',
@@ -100,7 +100,7 @@ drinks_fancy = Emotion.find_by_name("Fancy").drinks.create([
 	}
 	])
 
-drinks_adventurous = Emotion.find_by_name("Adventurous").drinks.create([
+drinks_adventurous = Emotion.find_by_name("BOLD").drinks.create([
 	{
 		name: 'Corpse Reviver No. 2',
 		image: '/images/adventurous-corpse-reviver.png',
@@ -121,7 +121,7 @@ drinks_adventurous = Emotion.find_by_name("Adventurous").drinks.create([
 	}
 	])
 
-drinks_romantic = Emotion.find_by_name("Romantic").drinks.create([
+drinks_romantic = Emotion.find_by_name("ROMANTIC").drinks.create([
 	{
 		name: 'Mimosa',
 		image: '/images/romantic-mimosa.png',
@@ -142,7 +142,7 @@ drinks_romantic = Emotion.find_by_name("Romantic").drinks.create([
 	}
 	])
 
-drinks_zany = Emotion.find_by_name("Zany").drinks.create([
+drinks_zany = Emotion.find_by_name("ZANY").drinks.create([
 	{
 		name: 'Bloody Mary',
 		image: '/images/zany-bloody-mary.png',
@@ -163,7 +163,7 @@ drinks_zany = Emotion.find_by_name("Zany").drinks.create([
 	}
 	])
 
-drinks_relaxed = Emotion.find_by_name("Relaxed").drinks.create([
+drinks_relaxed = Emotion.find_by_name("RELAXED").drinks.create([
 	{
 		name: 'Michelada',
 		image: '/images/relaxed-michelada.png',
@@ -184,7 +184,7 @@ drinks_relaxed = Emotion.find_by_name("Relaxed").drinks.create([
 	}
 	])
 
-drinks_pensive = Emotion.find_by_name("Pensive").drinks.create([
+drinks_pensive = Emotion.find_by_name("PENSIVE").drinks.create([
 	{
 		name: 'Old Fashioned',
 		image: '/images/pensive-old-fashioned.png',

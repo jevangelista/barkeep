@@ -37,7 +37,7 @@ $(document).ready(function(){
 	$( ".bartender-container" ).hover(function() {
 	  $('.right-bubble').fadeIn( "fast", function() {
     // Animation complete
-    	$(this).text("Hello, my name is Charlie! I will be your personal bartender today. Select one of the feelings below, and I'll serve just the drink for you!").fadeIn( "fast" );
+    	$(this).text("Hello, my name is Bart! I will be your personal bartender for today. Select one of the feelings below, and I'll serve just the drink for you!").fadeIn( "fast" );
  	 });
 
 

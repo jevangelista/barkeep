@@ -16,8 +16,9 @@
 <div class="container-fluid emotion-button-group">
 		  	<% @emotions.each do |emotion| %>
 		  		<div class="emotion-button">
-			
-		 			<%= link_to emotion.name, "/emotions/#{emotion.id}" %>
+					&mdash; <br>
+		 			<%= link_to emotion.name, "/emotions/#{emotion.id}" %><br>
+		 			&mdash;
 		  		</div>
 		  	<% end %>
 
