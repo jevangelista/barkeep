@@ -70,33 +70,7 @@ $(document).ready(function(){
 
 
 /****** End Emotions Page JS *******/ 
-
-/****** Start Splash Page JS *******/ 
-//hover for left box
-	$(".login-left").hover(function(){
-
-		  	$(this).addClass( "overlay" );
-		  	$(this).html('<div class="overlay-left">Come on in and join us!<br><br><a class="login-link" href="/users/new">Sign Up</a></div>');
-		      },function() {
-	    	$(this).removeClass( "overlay" );
-	    	$(this).html("New customers");
-
-
-	  }
-	);
-
-	//hover for right box
-	$(".login-right").hover(function(){
-
-		  	$(this).addClass( "overlay" );
-		  	$(this).html('<div class="overlay-right">Step right in!<br><br><a class="login-link" href="/sessions/new">Login</a></div>');
-		      },function() {
-	    	$(this).removeClass( "overlay" );
-	    	$(this).html("Returning members");
-	  }
-	);
-
-/****** End Splash Page JS *******/ 
+ 
 
 });
 
