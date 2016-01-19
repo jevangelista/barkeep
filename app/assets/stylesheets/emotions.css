@@ -5,15 +5,16 @@
 }
 
 .bartender-img {
-	width: 30%;
-	background-color: red;
+	width: 35%;
+	margin-left: 55%;
+
 
 }
 
 .left-bartender {
 	width: 70%;
-	background-color: black;
-	margin-bottom: 0px;
+	margin-top: -5%;
+	margin-bottom: -90px;
 	float: left;
 }
 
