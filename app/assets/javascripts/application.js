@@ -35,7 +35,7 @@ $(document).ready(function(){
 /****** End Drinks Page JS *******/ 
 
 	$( ".bartender-container" ).hover(function() {
-	  $('.right-bubble').fadeIn( "fast", function() {
+	  $('.right-bubble').fadeIn( "slow", function() {
     // Animation complete
     	$(this).text("Hello, my name is Bart! I will be your personal bartender for today. Select one of the feelings below, and I'll serve just the drink for you!").fadeIn( "fast" );
  	 });
@@ -44,21 +44,28 @@ $(document).ready(function(){
 
 	});
 
+	$('emotion-button').on('click',function (e) {
+	    e.preventDefault();
+	    console.log("this is the emotion button event");
+	});
+
+
+
     var obj = document.createElement("audio");
         obj.src="/sounds/shaker_sound.wav";
         obj.volume=0.10;
         obj.autoPlay=false;
         obj.preLoad=true;       
  
-	$("#bounce").click(function(){
+	$("#overlay").click(function(){
 		console.log("Overlay being clicked");
 				obj.play();
-			    $(this).animate({top: 70},"fast")
-			    .animate({top: 0},"fast")
-			    .animate({top: 70},"fast")
-			    .animate({top: 0},"fast")
-			    .animate({top: 70},"fast")
-			    .animate({top: 0},"fast", function() {
+			    $("#bounce").animate({top: -50},"fast")
+			    .animate({top: 10},"fast")
+			    .animate({top: -50},"fast")
+			    .animate({top: 10},"fast")
+			    .animate({top: -50},"fast")
+			    .animate({top: 10},"fast", function() {
                // Animation complete.
                $("#overlay").hide()
 
