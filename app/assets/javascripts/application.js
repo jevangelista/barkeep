@@ -44,13 +44,6 @@ $(document).ready(function(){
 
 	});
 
-	$('emotion-button').on('click',function (e) {
-	    e.preventDefault();
-	    console.log("this is the emotion button event");
-	});
-
-
-
     var obj = document.createElement("audio");
         obj.src="/sounds/shaker_sound.wav";
         obj.volume=0.10;
@@ -68,6 +61,7 @@ $(document).ready(function(){
 			    .animate({top: 10},"fast", function() {
                // Animation complete.
                $("#overlay").hide()
+               $(".emotions-font").show();
 
 
             });
