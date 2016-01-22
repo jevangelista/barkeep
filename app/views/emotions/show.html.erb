@@ -5,27 +5,11 @@
 	<div class="shaker-div type-bebas">Click to reveal your drink! Cheers!</div>
 </div>
 
-<div class="container-fluid">
-	<h1 class="emotions-font larger-font type-bebas"> <%= @drink.name %></h1>
-	<div class="animation">
-		<%= image_tag @drink.image, class: "drink-image" %>
-	</div>
+
+<div class="drinks-container">
+	<%= image_tag @drink.image, class: "drink-image" %>
+	<div class="emotions-font type-bebas"> <%= @drink.name %></div>
 </div>
-
-<div class="container-fluid recipe-button-group">
-
-	  		<div class="recipe-button">
-				<a href="#recipe-container">See Recipe</a>
-	  		</div>
-
-	  		<div class="recipe-button">
-				<% if current_user %>
-					  <%= link_to "Save Drink",   favorite_drink_path(@drink, type: "favorite"), method: :put %>
-				<% end %>
-	  		</div>
-	  
-</div>	
-
 
 
 
