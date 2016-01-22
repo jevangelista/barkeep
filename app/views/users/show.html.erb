@@ -1,4 +1,4 @@
-<div class="page-header fav-head-font">
+<div class="fav-head-font">
   	<h1>Welcome, <%= @user.name %>!</h1>
 
 
@@ -6,23 +6,31 @@
 	<%= button_to "Make a New Drink", emotions_path, method: "get",  class: "btn btn-default"  %>
 	</div>
 </div>
+<br><br>
+
+<div class="div-line"></div>
+
+
 
 <div class="container-fluid">
 
 
 	<h2 class="fav-head-font">Here Are Your Favorite Drinks </h2>
-	<div class="drinks-container">
+	<div class="fav-drink-container">
 		<% @favorites.each do |favorite| %>
-			<div class="drink-container">
+			<div class="fav-drinks">
 				<div class="fav-img">
-					<%= image_tag favorite.image, class: "fav-drink-image" %>
-				</div>
-				<div class="fav-name">
+					<%= link_to(image_tag("#{favorite.image}", class: "fav-drink-image"), "/drinks/#{favorite.id}")%>
 
-					<%= link_to favorite.name, "/drinks/#{favorite.id}", class: "fav-name-font" %>
-				</div>
-				
-			</div>
+
+
+                </div>
+
+                <div class="fav-name">
+
+                    <%= link_to favorite.name, "/drinks/#{favorite.id}", class: "fav-name-font type-bebas" %>
+                </div>
+            </div>
 		<% end %>
 	</div>
 

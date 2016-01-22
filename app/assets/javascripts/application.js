@@ -69,7 +69,6 @@ $(document).ready(function(){
 	});
 
 
-
 /****** End Emotions Page JS *******/ 
  
 
