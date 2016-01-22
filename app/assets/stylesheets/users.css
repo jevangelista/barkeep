@@ -13,6 +13,7 @@
 .fav-drinks {
 	background-color: #2d2d2d;
 	width: 80%;
+	height: 275px;
 	margin-top: 2%;
 	margin-bottom: 2%;
 	margin-left: 2%;
@@ -20,17 +21,19 @@
 
 }
 
-.fav-drinks:hover{
-	background-color: #801919;
-}
-
 .fav-img {
 	text-align: center;
 
 }
 
+.fav-drinks:hover{
+	background-color: #801919;
+}
+
+
 .fav-drink-image {
 	width: 60%;
+
 }
 
 .fav-name{
@@ -40,7 +43,7 @@
 .fav-name-font {
 	color: #ece5db;
 	text-align: center;
-	font-size: 40px;
+	font-size: 35px;
 	margin-top: 0%;
 	margin-bottom: 2%;
 }
@@ -61,7 +64,7 @@
 
 	.fav-drink-container {
 		margin-left: 10%;
-		padding: 0px;
+		padding-left: 5%;
 	}
 
 

@@ -11,18 +11,15 @@
 <div class="div-line"></div>
 
 
-
 <div class="container-fluid">
 
 
 	<h2 class="fav-head-font">Here Are Your Favorite Drinks </h2>
-	<div class="fav-drink-container">
-		<% @favorites.each do |favorite| %>
-			<div class="fav-drinks">
-				<div class="fav-img">
-					<%= link_to(image_tag("#{favorite.image}", class: "fav-drink-image"), "/drinks/#{favorite.id}")%>
-
-
+    <div class="fav-drink-container">
+        <% @favorites.each do |favorite| %>
+            <div class="fav-drinks">
+                <div class="fav-img">
+                    <%= link_to(image_tag("#{favorite.image}", class: "fav-drink-image"), "/drinks/#{favorite.id}")%>
 
                 </div>
 
@@ -31,8 +28,8 @@
                     <%= link_to favorite.name, "/drinks/#{favorite.id}", class: "fav-name-font type-bebas" %>
                 </div>
             </div>
-		<% end %>
-	</div>
+        <% end %>
+    </div>
 
 
 </div>
