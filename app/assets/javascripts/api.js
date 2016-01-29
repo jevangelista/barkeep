@@ -1,19 +1,33 @@
-$(document).ready(function(){
+// var key = "AIzaSyB1kuNQvVohmKYodg2I7pMs9ZY6-vT3QuQ"
 
-var query = "manhattan"
+// $(document).ready(function(){
 
-$.ajax({
-      url: "https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=3&q=how+to+make+cocktail" + query + "&key=AIzaSyB1kuNQvVohmKYodg2I7pMs9ZY6-vT3QuQ", 
-      dataType: "jsonp",
-      success: function(data){
-               console.log(data);           
-      },
-      error: function(jqXHR, textStatus, errorThrown) {
-          alert (textStatus, + ' | ' + errorThrown);
-      }
-  });
+// var query = $("#query").text();
+// console.log(query);
 
-});
+// $.ajax({
+//       url: "https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=1&q=how+to+make+cocktail" + query + "&type=video&key=" + key, 
+//       type: 'GET',
+//       jsonpCallback: 'cmsCallback',
+//       dataType: "jsonp",
+//       success: function(data){
+//                console.log(data);   
+//                var title = data.items[0].snippet.title
+//                var videoId = data.items[0].id.videoId 
+
+//                console.log(title);
+//                console.log(videoId);  
+
+//                $("#video-info").text(title + " " + videoId); 
+//       },
+//       error: function(jqXHR, textStatus, errorThrown) {
+//           alert (textStatus, + ' | ' + errorThrown);
+//       }
+
+
+//   });
+
+// });
 
 
 // $(document).ready(function(){
