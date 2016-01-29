@@ -15,7 +15,6 @@ $.ajax({
                var videoId = data.items[0].id.videoId 
 
                console.log(title);
-               console.log(videoId);  
 
                //When user clicks Watch How-To
                   //Change source attribute with correct videoId
@@ -23,8 +22,12 @@ $.ajax({
               $("#watch").on('click',function (e) {
                   e.preventDefault();
 
-                  $("#player").show();
                   console.log("player being clicked");
+                  console.log("video ID is: " + videoId);  
+
+                  $("#player").show();
+                  $("iframe").attr("src", "//www.youtube.com/embed/" + videoId);
+
 
 
                       var target = this.hash;
