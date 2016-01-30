@@ -112,7 +112,7 @@
 #overlay {
   background: rgba(0,0,0,0.7);
   width: 100%;
-  height: 900px;
+  height: 1500px;
   position: absolute;
   top: 0;
   left: 0;
@@ -203,6 +203,7 @@ img.drink-image {
 	margin-right: auto;
 	margin-top: 2%;
 	margin-bottom: 3%;
+
 }
 
 .recipe-button a {
@@ -226,10 +227,17 @@ img.drink-image {
 
 
 #player{
-	margin-left: 20%;
+	margin-left: 5%;
 	display: none;
 
 }
+
+.video-player{
+	width: 95%;
+	height: 300px;
+}
+
+
 
 /* Start of Column CSS */
 
@@ -343,9 +351,26 @@ img.drink-image {
 	width: 20%;
 	padding-top: 5px;
 	margin-top: 1%;
-}
+	margin-right: 2%;
+	float: left;
+	}
 
-	
+	.recipe-button-area{
+	margin-left: 37%
+
+	}
+
+	#player{
+	margin-left: 25%;
+	display: none;
+
+	}
+
+	.video-player{
+		width: 640px;
+		height: 360px;
+	}
+
 
 
 
