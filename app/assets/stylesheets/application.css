@@ -50,9 +50,10 @@ h2.type-news-cycle {
   margin-top: -15px;
 }
 
-
-
-
+.modal-body, .modal-header, .modal-footer {
+  background-color: #801919 !important;
+  color: white !important; 
+}
 
 
 /******* START Transparent Button Code  ********/

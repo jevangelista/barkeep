@@ -52,7 +52,7 @@
 			       <div>
 			    	  <%= f.password_field :password_confirmation, placeholder: "Confirm Password", class: "form-control"%>
 			    	</div>
-			      <%= f.submit "Sign Up" %>
+			      <%= f.submit "Sign Up", :class => 'btn btn-default success' %>
 			    <% end %> 
 		</div>
 
@@ -87,7 +87,7 @@
 				  <div>
 				    <%= f.password_field :password, placeholder: "Password", class: "form-control" %>
 				  </div>
-				  <%= f.submit "Login" %>
+				  <%= f.submit "Login", :class => 'btn btn-sm btn-default success' %>
 				<% end %>
 			  </div>
 			<div class="modal-footer">
