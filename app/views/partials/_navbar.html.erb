@@ -21,9 +21,16 @@
 	       <li><%= button_to "Logout", logout_path, method: "get", class: "btn btn-button-name btn-sm" %></li>
 	     
 	    <% else %>
-		  	
-		  	<li><%= button_to "Sign Up", new_user_path, method: "get", class: "btn btn-button-name btn-sm" %></li>
-	         <li><%= button_to "Login", sign_in_path, method: "get", class: "btn btn-button-name btn-sm" %></li>
+
+			<li><button data-toggle="modal" data-target="#loginModal" style="display: inline"
+	           class="btn btn-button-name btn-sm">
+		         Log In
+		       </button>
+		   </li>
+	        <li><button data-toggle="modal" data-target="#signUpModal" style="display: inline" class="btn btn-button-name btn-sm">
+	             Sign Up
+			 </button>
+			</li>
 		     
 		  <% end %>
 
