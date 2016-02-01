@@ -11,9 +11,85 @@
 	margin-bottom: 2%;
 	margin-left: auto;
 	margin-right: auto;
+	display: block;
 }
 
+#player{
+	margin-left: 5%;
+	display: none;
+
+}
+
+.video-player{
+	width: 95%;
+	height: 300px;
+}
+
+.watch-drinks {
+
+}
+
+.watch-drinks-button {
+	text-align: center;
+	background-color: transparent; 
+	border-radius: 2%;
+	border: 5px solid white;
+	height: 50px;
+	width: 40%;
+	padding: 2%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 2%;
+	margin-bottom: 3%;
+
+}
+
+.watch-drinks-button a {
+	font-weight: bold;
+	font-size: 20px;
+	color: black;
+
+}
+
+.watch-drinks-button:hover {
+	background-color: #801919;
+}
+
+.watch-drinks-button a {
+	color: white;
+}
+
+.watch-drinks-button a:hover,  .watch-drinks-button a:active{
+	text-decoration: none;
+}
+
+
+
+
+
 @media screen and (min-width: 768px) {
+
+	#player{
+	margin-left: 25%;
+	display: none;
+
+	}
+
+	.video-player{
+		width: 640px;
+		height: 360px;
+	}
+
+
+	.watch-drinks-button {
+	width: 30%;
+	padding-top: 5px;
+	margin-top: 1%;
+	margin-right: 2%;
+	margin-left: 4%;
+	float: left
+	}
+
 
 
 

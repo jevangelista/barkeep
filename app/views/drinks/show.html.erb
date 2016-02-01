@@ -1,6 +1,7 @@
 <div class="drinks-container">
 	<%= image_tag @drink.image, class: "drink-image" %>
 	<div class="drinks-font type-bebas"> <%= @drink.name %></div>
+		<div class="emotions-font"> <%= @drink.name %></div>
 </div>
 
 
@@ -18,4 +19,15 @@
 	            <h2 class="type-news-cycle"> INSTRUCTIONS: </h2>
 	                    <p class="type-anon-pro"> <%= @drink.instructions %></p>
 	    </div>
+</div>
+
+	<div class="recipe-button-area">
+		<div class="watch-drinks-button">
+			<a href="#player" id="watch"> Watch How-To</a>
+		</div>
+	</div>
+
+
+<div id="player">
+	 <iframe class="video w100 video-player" src="//www.youtube.com/embed/videoID" frameborder="0" allowfullscreen></iframe>
 </div>
