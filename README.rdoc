@@ -1,28 +1,31 @@
-== README
+=Barkeep!
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+=== To get started:
 
-Things you may want to cover:
+* bundle install
+* rake db:create
+* rake db:migrate
+* rake db:seed
+* rails s
+* Check out player at localhost:3000
 
-* Ruby version
+=== Overview:
+Barkeep! is an interactive cocktail web app that serves up drink recommendations, recipe information and a personal archive of saved drinks.
 
-* System dependencies
+=== User Stories:
+* Users can register and login
+* Logged in users will see a personal profile page, which includes saved drink information
+* Users will receive a drink recommendation based on their mood
+* Users can see recipe (ingredient and instruction) information, as well as a how-to video on how to create the drink
+* Users can navigate to different pages with navbar
 
-* Configuration
+== Heroku Link 
+http://barkeep.herokuapp.com/
 
-* Database creation
+== Technologies Used
+Ruby on Rails, postgreSQL, YouTube API, AJAX, JSON, Bootstrap, jQuery, Heroku, Git/GitHub, BCrypt
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+== Wishlist/Future Development
+In the future, I would like to implement a feature that incorporates the Google Map and Yelp API's to provide recommendations on where users can find a particular drink.
 
 
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
