@@ -15,7 +15,7 @@ class UsersController < ApplicationController
 	    @user = User.create(user_params)
 
 	    login(@user) # <-- login the user
-    	redirect_to "/users/#{@user.id}"
+    	redirect_to emotions_path
  	end
 
  	def show
@@ -23,6 +23,25 @@ class UsersController < ApplicationController
  		@favorites = current_user.favorites
  		render :show
  	end
+
+ 	def destroy
+ 		@favorite = current_user.favorite_drinks.find([:favorite_drink_id]).destroy
+ 	end
+
+	def favorite
+		@user = User.find(params[:id])
+		@drink = Drink.find(params[:drink_id])
+		type = params[:type]
+		if type == "unfavorite"
+		  current_user.favorites.delete(@drink)
+		  redirect_to "/users/#{@user.id}"
+
+		else
+		  # Type missing, nothing happens
+		  redirect_to "/users/#{@user.id}"
+		 
+		end
+	end
 
 end
 

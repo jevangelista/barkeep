@@ -18,6 +18,7 @@
     <div class="fav-drink-container">
         <% @favorites.each do |favorite| %>
             <div class="fav-drinks">
+
                 <div class="fav-img">
                     <%= link_to(image_tag("#{favorite.image}", class: "fav-drink-image"), "/drinks/#{favorite.id}")%>
                     <h2> <%= link_to favorite.name, "/drinks/#{favorite.id}", class: "type-bebas fav-name-font" %></h2>

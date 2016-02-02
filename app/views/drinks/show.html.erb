@@ -22,10 +22,18 @@
 </div>
 
 	<div class="recipe-button-area">
-		<div class="watch-drinks-button">
+		<div class="recipe-button">
 			<a href="#player" id="watch"> Watch How-To</a>
 		</div>
+
+
+		<% if current_user %>
+		<div class="recipe-button">
+		  <%= link_to "Unsave Drink",   favorite_drink_path(@drink, type: "unfavorite"), method: :put %>
+		</div>
+		<% end %>
 	</div>
+
 
 
 <div id="player">
