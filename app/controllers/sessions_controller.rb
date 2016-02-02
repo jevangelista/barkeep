@@ -12,7 +12,8 @@ class SessionsController < ApplicationController
 	      login(@user)
 	      redirect_to "/users/#{@user.id}"
 	    else
-	      redirect_to "/sign_in"
+	      redirect_to "/"
+	      flash[:alert] = 'Failed to log in! Please try again!'
 	    end
   	end
 

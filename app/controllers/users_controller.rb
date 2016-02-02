@@ -16,6 +16,7 @@ class UsersController < ApplicationController
 
 	    login(@user) # <-- login the user
     	redirect_to emotions_path
+    	flash[:notice] = 'Welcome! You have succesfully signed up!'
  	end
 
  	def show
