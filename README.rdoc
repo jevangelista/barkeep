@@ -9,10 +9,10 @@
 * rails s
 * Check out player at localhost:3000
 
-=== Overview:
+=== Overview
 Barkeep! is an interactive cocktail web app that serves up drink recommendations, recipe information and a personal archive of saved drinks.
 
-=== User Stories:
+=== User Stories
 * Users can register and login
 * Logged in users will see a personal profile page, which includes saved drink information
 * Users will receive a drink recommendation based on their mood
