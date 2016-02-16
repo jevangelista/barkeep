@@ -20,7 +20,7 @@ Barkeep! is an interactive cocktail web app that serves up drink recommendations
 * Users can navigate to different pages with navbar
 
 == Heroku Link 
-* https://barkeep-drink.herokuapp.com/
+* ghttps://barkeep-drink.herokuapp.com/
 
 == Technologies Used
 Ruby on Rails, postgreSQL, YouTube API, AJAX, JSON, Bootstrap, jQuery, Heroku, Git/GitHub, BCrypt

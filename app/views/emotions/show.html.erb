@@ -31,12 +31,12 @@
 
 <div class="recipe-button-area">
 	<div class="recipe-button">
-		<a href="#player" id="watch"> Watch How-To</a>
+		<a href="#player" id="watch" class="type-bebas"> WATCH HOW-TO</a>
 	</div>
 
 		<% if current_user %>
 		<div class="recipe-button">
-		  <%= link_to "Save Drink",   favorite_drink_path(@drink, type: "favorite"), method: :put %>
+		  <%= link_to "SAVE DRINK",   favorite_drink_path(@drink, type: "favorite"), method: :put, class: "type-bebas" %>
 		</div>
 		<% end %>
 

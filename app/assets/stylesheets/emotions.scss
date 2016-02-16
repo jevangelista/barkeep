@@ -14,6 +14,7 @@
 	margin-top: -50px;
 	margin-bottom: -90px;
 
+
 }
 
 .div-line {
@@ -25,11 +26,10 @@
 
 
 .right-bubble {
-	font-size: 15px;
 	background: white;
 	display: none;
 	position: relative;
-	padding: 3%;
+	padding: 2%;
 	border-radius: 15px;
 	width: 80%;
 	margin-top: 5%;
@@ -50,7 +50,7 @@
 	border-top: 15px solid #ffffff;
 
 	left: 155px;
-	top: 80px;
+	top: 95px;
 }
 
 
@@ -261,11 +261,12 @@ img.drink-image {
 
 	.right-bubble {
 		float: right;
-		display: inline;
+		display: hidden;
 		width: 20%;
 		height: auto;
 		margin-top: 2%;
 		margin-right: 10%;
+		padding: 2%;
 	}
 
 	.right-bubble:after {
@@ -348,15 +349,15 @@ img.drink-image {
 	}
 
 	.recipe-button {
-	width: 20%;
-	padding-top: 5px;
+	width: 25%;
+	padding-top: 6px;
 	margin-top: 1%;
 	margin-right: 2%;
 	float: left;
 	}
 
 	.recipe-button-area{
-	margin-left: 37%
+	margin-left: 33%
 
 	}
 

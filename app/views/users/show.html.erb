@@ -1,9 +1,9 @@
 <div class="fav-head-font">
-  	<h1>Welcome, <%= @user.name %>!</h1>
+  	<h2 class="uppercase type-news-cycle">Welcome, <%= @user.name %></h2>
 
 
 	<div>
-	<%= button_to "Make a New Drink", emotions_path, method: "get",  class: "btn btn-default"  %>
+	<%= button_to "MAKE A NEW DRINK", emotions_path, method: "get",  class: "make-drink-btn type-bebas"  %>
 	</div>
 </div>
 <br><br>
@@ -14,7 +14,7 @@
 <div class="container-fluid">
 
 
-	<h2 class="fav-head-font">Here Are Your Favorite Drinks </h2>
+	<h1 class="fav-head-font uppercase type-news-cycle-space">Favorite Drinks </h1>
     <div class="fav-drink-container">
         <% @favorites.each do |favorite| %>
             <div class="fav-drinks">

@@ -19,7 +19,7 @@
 body {
 	padding-top:40px;
 	background-color: #58595b;
-  font-family: 'News Cycle', sans-serif;
+  font-family: 'Anonymous Pro', sans-serif;
 }
 
 @font-face {
@@ -35,11 +35,20 @@ body {
 
 .type-news-cycle {
   font-family: 'News Cycle', sans-serif;
+  letter-spacing: 3px;
+}
+
+.type-news-cycle-space {
+  font-family: 'News Cycle', sans-serif;
   letter-spacing: 2px;
 }
 
 h2.type-news-cycle {
   font-size: 20px;
+}
+
+.uppercase {
+  text-transform: uppercase;
 }
 
 .type-anon-pro {
@@ -84,6 +93,33 @@ h2.type-news-cycle {
 
 /******* END Transparent Button Code  ********/
 
+
+/******* START NAVBAR Button Code  ********/
+
+.nav-button-name, .nav-button-name:link, .nav-button-name:visited {
+    background-color: transparent;
+    border-radius: 0;
+    color: white;
+}
+.nav-button-name:active, .nav-button-name:hover {
+    background-color: #2d2d2d;
+    color: #ffffff
+}
+
+.nav-button-name.nav-btn-sm {
+    margin-top: 8px;
+    margin-right: 5px;
+}  
+
+.nav-space{
+  margin-top: 12px;
+}
+
+.nav-more-space {
+  margin-top: 20px;
+}
+
+/******* END NAVBAR Button Code  ********/
 
 /******* START Navbar Code  ********/
 

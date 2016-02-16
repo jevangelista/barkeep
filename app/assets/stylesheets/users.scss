@@ -1,6 +1,31 @@
+.make-drink-btn {
+	text-align: center;
+	background-color: transparent; 
+	width: 300px;
+	height: 100px;
+	border-radius: 2%;
+	border: 5px solid white;
+	margin-top: 2%;
+	margin-bottom: 2%;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 2%;
+	color: white;
+	font-size: 30px;
+}
+
+.make-drink-btn:hover {
+	background-color: #801919;
+}
+
+.make-drink-btn a:hover,  .make-drink-btn a:active{
+	text-decoration: none;
+	color: white;
+}
+
 .fav-head-font {
 	text-align: center;
-	color: #FFEBCD;
+	color: white;
 
 }
 
@@ -9,9 +34,15 @@
 	padding-left: 1%;
 }
 
+a:hover, a:active{
+	text-decoration: none;
+	color: white;
+}
+
 
 .fav-drinks {
 	background-color: #2d2d2d;	
+	color: white;
 	width: 95%;
 	height: 290px;
 	margin-top: 2%;

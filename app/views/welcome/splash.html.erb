@@ -33,35 +33,35 @@
 	    <div class="modal-content motra">
 	      <div class="modal-header">
 	        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-	        <h4 class="modal-title text" id="myModalLabel">Create an account</h4>
+	        <h4 class="modal-title text type-news-cycle" id="myModalLabel">CREATE AN ACCOUNT</h4>
 	      </div>
 	      <div class="modal-body">
 			    <%= form_for @user do |f| %>
 			      <div>
-			        <%= f.text_field :name, placeholder: "Name", class: "form-control" %>
+			        <%= f.text_field :name, placeholder: "Name", class: "form-control type-anon-pro" %>
 			      </div>
 			      <div>
-			        <%= f.text_field :email, placeholder: "Email", class: "form-control" %>
+			        <%= f.text_field :email, placeholder: "Email", class: "form-control type-anon-pro" %>
 			      </div>
 			          <div>
-			        <%= f.text_field :city, placeholder: "City", class: "form-control" %>
+			        <%= f.text_field :city, placeholder: "City", class: "form-control type-anon-pro" %>
 			      </div>
 			      <div>
-			        <%= f.password_field :password, placeholder: "Password", class: "form-control" %>
+			        <%= f.password_field :password, placeholder: "Password", class: "form-control type-anon-pro" %>
 			      </div>
 			       <div>
-			    	  <%= f.password_field :password_confirmation, placeholder: "Confirm Password", class: "form-control"%>
+			    	  <%= f.password_field :password_confirmation, placeholder: "Confirm Password", class: "form-control type-anon-pro"%>
 			    	</div>
-			      <%= f.submit "Sign Up", :class => 'btn btn-sm btn-default success' %>
+			      <%= f.submit "SIGN UP", class: "btn btn-button-name btn-default type-news-cycle-space btn-default nav-space"  %>
 			    <% end %> 
 		</div>
 
 				<div class="modal-footer">
-					<span class="text">
+					<span class="text type-anon-pro nav-more-space">
             		Already have an account?
             		</span>
-            		<button data-toggle="modal" data-target="#loginModal" data-dismiss="modal" style="display: inline" class="btn btn-sm btn-default success">
-                 	Log In Here
+            		<button data-toggle="modal" data-target="#loginModal" data-dismiss="modal" style="display: inline" class="btn btn-button-name btn-default type-news-cycle-space btn-default ">
+                 	LOG IN HERE
                		</button>
         		</div>
 
@@ -76,26 +76,26 @@
 	    <div class="modal-content motra">
 	      <div class="modal-header">
 	        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-	        <h4 class="modal-title text" id="myModalLabel">Login</h4>
+	        <h4 class="modal-title text type-news-cycle-space" id="myModalLabel">LOGIN</h4>
 	      </div>
 		      <div class="modal-body">
 
 				<%= form_for @user, url: "/sessions", method: "post" do |f| %>
 				  <div>
-				    <%= f.text_field :email, placeholder: "Email", class: "form-control" %>
+				    <%= f.text_field :email, placeholder: "Email", class: "form-control type-anon-pro" %>
 				  </div>
 				  <div>
-				    <%= f.password_field :password, placeholder: "Password", class: "form-control" %>
+				    <%= f.password_field :password, placeholder: "Password", class: "form-control type-anon-pro" %>
 				  </div>
-				  <%= f.submit "Login", :class => 'btn btn-sm btn-default success' %>
+				  <%= f.submit "LOGIN", class: "btn btn-button-name btn-default type-news-cycle-space btn-default nav-space" %>
 				<% end %>
 			  </div>
 			<div class="modal-footer">
-				<span class="text">
+				<span class="text type-anon-pro">
             New to Barkeep?
             	</span>
-            <button data-toggle="modal" data-target="#signUpModal" data-dismiss="modal" style="display: inline" class="btn btn-sm btn-default success">
-                Register Here
+            <button data-toggle="modal" data-target="#signUpModal" data-dismiss="modal" style="display: inline" class="btn btn-button-name btn-default type-news-cycle-space">
+                REGISTER HERE
                </button>
             
         	</div>	

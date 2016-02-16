@@ -16,19 +16,19 @@
 	 	<!-- @user.present? -->
 	    <% if current_user %>
 	      
-	      <li><%= button_to "Bar", emotions_path, method: "get", class: "btn btn-button-name btn-sm" %></li>
-	       <li><%= button_to "Profile", current_user, method: "get", class: "btn btn-button-name btn-sm" %></li>
-	       <li><%= button_to "Logout", logout_path, method: "get", class: "btn btn-button-name btn-sm" %></li>
+	      <li><%= button_to "BAR", emotions_path, method: "get", class: "btn nav-button-name nav-btn-sm type-news-cycle" %></li>
+	       <li><%= button_to "PROFILE", current_user, method: "get", class: "btn nav-button-name nav-btn-sm type-news-cycle" %></li>
+	       <li><%= button_to "LOGOUT", logout_path, method: "get", class: "btn nav-button-name nav-btn-sm type-news-cycle-space" %></li>
 	     
 	    <% else %>
 
 			<li><button data-toggle="modal" data-target="#loginModal" style="display: inline"
-	           class="btn btn-button-name btn-sm">
-		         Login
+	           class="btn nav-button-name nav-btn-sm type-news-cycle-space">
+		         LOGIN
 		       </button>
 		   </li>
-	        <li><button data-toggle="modal" data-target="#signUpModal" style="display: inline" class="btn btn-button-name btn-sm">
-	             Sign Up
+	        <li><button data-toggle="modal" data-target="#signUpModal" style="display: inline" class="btn nav-button-name nav-btn-sm type-news-cycle-space">
+	             SIGN UP
 			 </button>
 			</li>
 		     
